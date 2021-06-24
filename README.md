@@ -5,6 +5,6 @@ https://www.enthrive.org/
 
 “Scratch a dog and you’ll find a permanent job.” – Franklin P. Jones (humourist)
 
-### You can visit our deployed site here: 
+### You can visit our deployed site here: https://cod-enthrive.github.io/wellness-site/index.html
 
 
