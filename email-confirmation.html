@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap Link -->
+  <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.min.css">
+  <!-- Robotogoogle fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Roboto-slab google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS Link -->
+  <link rel="stylesheet" href="./assets/css/app.css">
+  <title>Confirmation</title>
+</head>
+<body>
+
+  <!-- Start of main-content -->
+  <main id="email-confirm-content">
+    <div class="progress-bar"></div>
+
+    <!-- Star of Return-link -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 return-link-container">
+
+          <a class="return-link black-text" href="#" onclick="history.go(-1)">
+            <i class="far fa-chevron-left"></i>
+          </a>
+
+          <h4 class="sub-title black-text">Email confirmation</h4>
+
+        </div>
+      </div>
+    </div>
+    <!-- End of Return-link -->
+
+    <!-- Start of main content -->
+    <div class="container main-content">
+
+      <div class="row">
+        <div class="col-12 form-container">
+          <p>Your free online consultaion: Monday May 7th 10:00 AM</p>
+
+          <form action="#" class="confirm-email-form">
+
+            <!-- Required -->
+            <div class="inputs-contianer">
+              <p>Required:</p>
+              <div class="form-group">
+                <div class="user-name-wrapper">
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fal fa-user-circle"></i></span>
+                    <input type="text" name="first-name" id="first-name" placeholder="First name" required>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" name="last-name" placeholder="Last name" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fal fa-envelope-open-text"></i></span>
+                  <input type="email" name="email" placeholder="Email" required>
+                </div>
+              </div>
+            </div>
+
+            <!-- Optional -->
+            <div class="inputs-contianer">
+              <p>Optional:</p>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fal fa-phone-alt phone-icon"></i></span>
+                  <input type="tel" name="phone-number" placeholder="Telephone">
+                </div>
+                <div class="textarea-container">
+                  <textarea name="message" cols="100" rows="6" placeholder="Your story. 
+What would you like your counselor to know
+for your scheduled consultation?"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4 col-md-2 col-sm-1 d-sm-block d-none"></div>
+              <div class="col-lg-4 col-md-8 col-sm-10 submit-container">
+                <p>If you don't see an email within a few minutes, be sure to check your spam folder</p>
+                <button type="button" class="linear-btn" onclick="window.location= 'confirm.html'">Confirm</button>
+              </div>
+              <div class="col-lg-4 col-md-2 col-sm-1 d-sm-block d-none"></div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- End of main content -->
+
+  </main>
+  <!-- Start of main-content -->
+
+
+<!-- Bootstrap JS link -->
+<script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+<!-- FontAwsome JS link -->
+<script src="./vendors/fontawesome/fontawesome.js"></script>
+
+</body>
+</html>

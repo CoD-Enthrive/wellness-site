@@ -1,0 +1,153 @@
+#email-confirm-content{
+  background: $white-400;
+  @include page-height;
+
+  .progress-bar{
+    width: 85%;
+  }
+
+  // Styling for main content
+  .main-content{
+    @include main-content-padding;
+
+    .form-container{
+
+      p{
+        font-size: 1.125rem;
+        color: $dark;
+      }
+
+      .confirm-email-form{
+        width: 100%;
+
+        .inputs-contianer{
+          border: 1px solid $dark;
+          padding: 1em 2em 2.5em 2em;
+
+          .form-group{
+            width: 80%;
+            margin: auto;
+            .user-name-wrapper{
+              display: flex;
+              .input-group{
+                width: 50%;
+                margin-bottom: 1em;
+                font-size: 1.125rem;
+                color: $dark;
+                .input-group-text{
+                  font-size: 1.4rem;
+                  color: $blue;
+                }
+                input{
+                  width: 100%;
+                  border: none;
+                  outline: none;
+                  border: 1px solid #ced4da;
+                  border-radius: 4px;
+                  padding: 6px 12px;
+                }
+                #first-name{
+                  width: calc(100% - 50px);
+                  border-radius: 0 4px 4px 0;
+                }
+
+              }
+            }
+            
+            .input-group{
+              width: 100%;
+              margin-bottom: 1em;
+              font-size: 1.125rem;
+              .input-group-text{
+                font-size: 1.4rem;
+                color: $blue;
+                .phone-icon{
+                  transform: rotate(90deg);
+                }
+              }
+              input{
+                width: calc(100% - 48px);
+                border: none;
+                outline: none;
+                border: 1px solid #ced4da;
+                border-radius: 0 4px 4px 0;
+                padding: 6px 12px;
+              }
+            }
+
+            .textarea-container{
+              width: 100%;
+              textarea{
+                outline: none;
+                width: 100%;
+                border: 1px solid #ced4da;
+                border-radius: 4px;
+                padding: 12px;
+                font-size: 1.125rem;
+                margin-bottom: .73em;
+              }
+            }
+
+          }
+
+        }
+
+        .submit-container{
+          @include flex-column-center;
+          text-align: center;
+          font-size: 1rem;
+          margin-top: 3em;
+          button{
+            width: 100%;
+            margin-top: 2em;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  #email-confirm-content{
+    .main-content{
+      padding-bottom: 2em;
+      .form-container{
+        p{
+          font-size: 1rem;
+        }
+        .confirm-email-form{
+
+          .inputs-contianer{
+            padding: 1em;
+            padding-bottom: 2.3em;
+            .form-group{
+              width: 100%;
+            }
+          }
+
+          .submit-container{
+            padding: 0 2em;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 475.98px) {
+  #email-confirm-content{
+    .main-content .form-container .confirm-email-form .inputs-contianer{
+      .form-group .user-name-wrapper{
+        flex-direction: column;
+        .input-group{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

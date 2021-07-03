@@ -1,51 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="css/main.css?version=2">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script defer src="js/fontawesome.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script>$('#continue').on('click', function() {
-        window.location = '#';
-    })​</script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap Link -->
+  <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.min.css">
+  <!-- Robotogoogle fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Roboto-slab google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS Link -->
+  <link rel="stylesheet" href="./assets/css/app.css">
+  <title>Home</title>
 </head>
-<body id="index">
-    <div class="progress">
-        <div class="progress-bar progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
-      </div>
-    <div class="container-fluid">
+<body>
+
+  <!-- Start of main-content -->
+  <main id="home-main-content">
+
+    <!-- Star of Header -->
+    <div class="header">
+      <div class="container">
         <div class="row">
-          <div class="col-4 text-white" id="content_left">
-            <a href="landing.html">
-                <span style="font-size: 1.5em; color: white; float:right; margin:40px;">
-                    <i class="fal fa-chevron-left"></i>
-                </span>
-            </a>
-          </div>
-          <div class="col-4" id="content_center">
-            <h1>Welcome</h1>
-            <h3>What are some areas that you<br>want to focus on, or get help with?</h3>
-            <button id="buttons"><input type="checkbox" class="checkbox-round"> <p>Anxiety</p></button><br>
-            <button id="buttons"><input type="checkbox" class="checkbox-round"> <p>Depression</p></button><br>
-            <button id="buttons"><input type="checkbox" class="checkbox-round"> <p>Sleep</p></button><br>
-            <button id="buttons"><input type="checkbox" class="checkbox-round"> <p>Professional Development</p></button><br>
-            <button id="buttons"><input type="checkbox" class="checkbox-round"> <p>Exercise and Diet</p></button><br>
-            <button id="buttons"><input type="checkbox" class="checkbox-round"> <p>Something Else</p></button><br>
-            <br><h3>Skip and <a href="schedule.html">schedule</a> your free online <br>consultation.</h3>
-            <button id="continue" onclick="window.location.href='howitworks.html';">Continue</button>
-            <br>
-          </div>
-          <div class="col-lg-4" id="content_right">
+          <div class="col-12 header-content">
+
+            <div class="logo">
+              <h4>Wellness</h4>
+            </div>
+
+            <div class="login-container">
+              <div class="counseling">
+                <p>Free Counseling </p>
+              </div>
+              <div class="login">
+                <a href="#">Login</a>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
+    </div>
+    <!-- End of Header -->
+
+    <!-- Start of main content -->
+    <div class="container main-content">
+      <div class="row">
+
+        <!-- Texts-container -->
+        <div class="col-12 hero-texts-container">
+          <h1 class="hero-title">Get Well, Stay Well</h1>
+          <p class="hero-text">We want to be your companion,<br> helping you to achieve your mental,<br> emotional, and life goals.</p>
+        </div>
+
+        <!-- Buttons container -->
+        <div class="col-12 btns-container">
+          <ul class="list">
+
+            <!-- Link 1 -->
+            <li class="links-list"><a href="./individual.html" class="links">
+              <span class="icon"><i class="far fa-chevron-double-right"></i></span> 
+              Individuals
+            </a></li>
+
+            <!-- Link 2 -->
+            <li class="links-list"><a href="./couple.html" class="links">
+              <span class="icon"><i class="far fa-chevron-double-right"></i></span> 
+              Couples
+            </a></li>
+
+            <!-- Link 3 -->
+            <li  class="links-list"><a href="#" class="links">
+              <span class="icon"><i class="far fa-chevron-double-right"></i></span> 
+              Employers
+            </a></li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <!-- End of main content -->
+
+  </main>
+  <!-- Start of main-content -->
+
+  <!-- Start of Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-1 col-md-1 col-sm-12 logo-container">
+          <a href="#"><h2>W</h2></a>
+        </div>
+
+        <!-- What We offer links -->
+        <div class="col-lg-2 col-md-3 col-6 links-container">
+          <h5>What We Offer</h5>
+          <ul class="footer-links-list">
+            <li><a href="./individual.html">For Individuals</a></li>
+            <li><a href="./couple.html">For Couples</a></li>
+            <li><a href="#">For Employers</a></li>
+            <li><a href="#">Mobile App</a></li>
+          </ul>
+        </div>
+
+        <!-- Condition links -->
+        <div class="col-lg-2 col-md-3 col-6 links-container">
+          <h5>Conditions</h5>
+          <ul class="footer-links-list">
+            <li><a href="#">Depression</a></li>
+            <li><a href="#">Anxiety</a></li>
+            <li><a href="#">Panic Attacks</a></li>
+            <li><a href="#">PTSD</a></li>
+            <li><a href="#">OCD</a></li>
+            <li><a href="#">Bipolar</a></li>
+            <li><a href="#">Other</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Company links -->
+        <div class="col-lg-2 col-md-3 col-6 links-container">
+          <h5>Our Company</h5>
+          <ul class="footer-links-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Counselors</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+
+        <!-- Social icons links -->
+        <div class="col-lg-5 col-md-2 col-6 social-links">
+          <ul class="social-links-list">
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Copyrights descriptions -->
+        <div class="col-12 copyrights">
+          <p>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span class="additionl-resource"><a href="./resources.html" class="underline-link">Additional resource.</a></span></p>
+          <p>Copyright &copy; <span id="copyright_date">2020</span> Wellness Inc, All rights reserved.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+
+
+<!-- Bootstrap JS link -->
+<script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+<!-- FontAwsome JS link -->
+<script src="./vendors/fontawesome/fontawesome.js"></script>
+<!-- Custom JS link -->
+<script src="./assets/js/app.js"></script>
 </body>
 </html>

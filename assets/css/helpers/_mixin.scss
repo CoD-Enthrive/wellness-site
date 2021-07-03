@@ -1,0 +1,37 @@
+
+@mixin page-height {
+  width: 100%;
+  min-height: 100vh;
+}
+
+@mixin link-transition {
+  transition: all .4s ease;
+}
+
+@mixin main-content-padding {
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+
+@mixin main-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include page-height;
+}
+
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

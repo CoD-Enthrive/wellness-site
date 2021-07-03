@@ -1,0 +1,69 @@
+.header{
+  background-color: transparent;
+  padding: .3em 0;
+
+  .header-content{
+    @include flex-between;
+    align-items: center;
+    // border: 1px solid red;
+
+    .logo h4{
+      margin-bottom: 0
+    }
+
+    .login-container{
+      @include flex-between;
+      align-items: center;
+      
+      .counseling{
+        margin-right: 1em;
+        p{
+          background-image: url('./../images/menubg.png');
+          background-repeat: round;
+          background-position: left;
+          padding: 17px;
+          margin: 0;
+          margin-top: 7px;
+          padding-top: 4px;
+        }
+      }
+
+      .login a{
+        display: block;
+        color: $white;
+        padding: 2px 6px;
+      }
+
+    }
+
+  }
+
+}
+
+// Sticky header class for JS
+.fixed-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $blue;
+  box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.16);
+  z-index: 99;
+}
+
+@media (max-width: 575.98px) {
+  .header .header-content{
+    .login-container{
+      .counseling{
+        margin-right: .5em;
+        p{
+          font-size: .9rem;
+        }
+      }
+      .login a{
+        font-size: .9rem;
+        padding: 0 4px 2px 4px;
+      }
+    }
+  }
+}
