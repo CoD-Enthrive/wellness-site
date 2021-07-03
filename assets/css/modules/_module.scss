@@ -1,0 +1,27 @@
+// Progress Bar
+.progress-bar{
+  height: 8px;
+  background-color: $green;
+}
+
+.return-link-container{
+  display: flex;
+  align-items: center;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  .return-link{
+    font-size: 1.4rem;
+    padding: 1px 8px 1px 1px;
+    @include link-transition;
+    &:hover{
+      color: $blue;
+    }
+  }
+  .sub-title{
+    width: calc(100% - 20px);
+    text-align: center;
+    margin: 0;
+    margin-left: -10px;
+  }
+}
+

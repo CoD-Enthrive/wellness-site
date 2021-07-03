@@ -1,0 +1,97 @@
+#home-main-content{
+  background-image: url("./../images/wellness-home.png");
+  @include main-bg-image;
+
+  // Styling for Mian Content
+  .main-content{
+    @include main-content-padding;
+
+    .hero-texts-container{
+      padding-top: 2em;
+      padding-bottom: 2em;
+      .hero-title{
+        font-weight: 400;
+      }
+      .hero-text{
+        font-size: 1.4rem;
+      }
+    }
+
+    .btns-container{
+      padding-top: 1em;
+      padding-bottom: 1em;
+
+      .list{
+        @include flex-column-center;
+        align-items: flex-start;
+        .links-list{
+          background-color: transparent;
+          display: inline-block;
+          width: 280px;
+          border: 2px solid $blue;
+          border-radius: 25px;
+          padding: 3px;
+          margin-bottom: .5em;
+          .links{
+            display: block;
+            padding: 4px 15px;
+            background-color: $blue;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            color: $white;
+            @include link-transition;
+            &:hover{
+              padding-left: 24px;
+            }
+            .icon{
+              color: $yellow;
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
+
+// Media Queries
+@media (max-width: 575.98px) {
+  #home-main-content{
+
+    .main-content{
+
+      .hero-texts-container .hero-text{
+        font-size: 1rem;
+      }
+
+      .btns-container .list .links-list .links{
+        font-size: 1rem;
+        padding: 3px 15px;
+        .icon{
+          font-size: 1.2rem;
+        }
+      }
+
+    }
+
+  }
+}
+
+@media (max-width: 374.98px) {
+  #home-main-content{
+
+    .main-content{
+
+      .btns-container{
+        .list .links-list{
+          width: 100%;
+        }
+      }
+
+    }
+
+  }
+}
