@@ -1,0 +1,77 @@
+#schedule-main-content{
+  background: $white-400;
+  @include page-height;
+
+  .progress-bar{
+    width: 75%;
+  }
+
+  // Styling for main content
+  .main-content{
+    @include main-content-padding;
+
+    .date-picker{
+      text-align: center;
+      .input-groups{
+        label{
+          font-size: 1.125rem;
+          color: $dark;
+        }
+        input{
+          background-color: transparent;
+          border: 1px solid $dark;
+          border-radius: 4px;
+          padding-left: 6px;
+          padding-right: 6px;
+          margin-left: .3em;
+          font-size: 1.125rem;
+          color: $dark;
+          &::placeholder{
+            color: $dark;
+          }
+        }
+      }
+    }
+
+    .schedule-container{
+      padding-top: 2em;
+
+      .table{
+        border: 1px solid $dark;
+        width: 100%;
+        margin: 0;
+
+        tbody{
+          tr{
+            border: none;
+            border-bottom: 1px solid gray;
+            td{
+              padding-top: .8em;
+              .scedule-date{
+                font-size: 1.125rem;
+                color: $dark;
+              }
+            }
+          }
+        }
+
+        tfoot{
+          border: none;
+          border-bottom: 1px solid $dark;
+          tr{
+            border: none;
+            td{
+              text-align: center;
+              padding-top: 1em;
+              padding-bottom: 1.2em;
+            }
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}
