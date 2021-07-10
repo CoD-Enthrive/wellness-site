@@ -5,22 +5,30 @@
 
   .logo-container{
     margin-bottom: 1em;
-    h2{
-      color: $white;
-      font-family: 'Roboto Slab', serif;
-      line-height: .8;
+    .logo{
+      max-width: 50%;
+      height: auto;
+      margin-bottom: 1em;
+    }
+    p{
+      color: $gray-100;
     }
   }
 
   .links-container{
     margin-bottom: 1em;
+    .condition-links{
+      width: 62%;
+      margin: auto;
+      padding-left: 1em;
+    }
     .footer-links-list{
       li{
         margin-bottom: .5em;
         a{
           display: block;
           color: $gray-100;
-          @include link-transition;
+          transition: $link-transition;
           &:hover{
             color: $white;
           }
@@ -32,17 +40,18 @@
   .social-links{
     @include flex-end;
     align-items: flex-start;
+    margin-bottom: 1em;
     .social-links-list{
       display: flex;
       li{
-        margin-left: .5em;
+        margin-left: .4em;
         a{
           display: block;
-          font-size: 1.4rem;
+          font-size: 1.6rem;
           color: $white;
           line-height: 1.2;
           padding: 0 4px;
-          @include link-transition;
+          transition: $link-transition;
           &:hover{
             color: $blue;
           }
@@ -69,23 +78,47 @@
 
 }
 
+@media (max-width: 991.98px) {
+  .footer .links-container .condition-links{
+    width: 100%;
+    padding-left: 0;
+    margin-left: -1em;
+  }
+}
+
 @media (max-width: 767.98px) {
   .footer{
 
-    .logo-container h2{
-      text-align: center;
+    .logo-container .logo{
+      width: 20%;
+    }
+
+    .links-container .condition-links{
+      width: 100%;
+      padding-left: 0;
+      margin-left: 0;
     }
 
     .social-links{
       justify-content: flex-start;
       .social-links-list li{
         margin-left: 0;
-        margin-right: .5em;
+        margin-right: .4em;
         &:last-child{
           margin-right: 0;
         }
       }
     }
 
+    .copyrights p{
+      font-size: .8rem;
+    }
+
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer .logo-container .logo{
+    width: 30%;
   }
 }

@@ -1,11 +1,6 @@
-
 @mixin page-height {
   width: 100%;
   min-height: 100vh;
-}
-
-@mixin link-transition {
-  transition: all .4s ease;
 }
 
 @mixin main-content-padding {
@@ -28,6 +23,11 @@
 @mixin flex-between {
   display: flex;
   justify-content: space-between;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
 }
 
 @mixin flex-column-center {

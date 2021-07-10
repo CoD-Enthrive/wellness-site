@@ -1,9 +1,9 @@
-#individual-main-content{
+#individual-page{
   background-image: url("./../images/wellness-individual.png");
   @include main-bg-image;
 
-  .progress-bar{
-    width: 25%;
+  .return-link-container .return-link:hover{
+    color: $black
   }
 
   // Styling for main content
@@ -22,7 +22,7 @@
       }
 
       .checkbox-container{
-        padding: 2em 0;
+        padding-top: 2em;
 
         .checkbox-lists{
           width: 100%;
@@ -33,7 +33,7 @@
             align-items: center;
             position: relative;
             background: $linear-color;
-            opacity: .75;
+            opacity: .8;
             border-radius: 30px;
             padding: 4px 12px;
             margin-bottom: .5em;
@@ -88,14 +88,6 @@
 
       }
 
-      .btn-container{
-        padding-top: 2em;
-        display: flex;
-        button{
-          width: 100%;
-        }
-      }
-
     }
 
   }
@@ -104,7 +96,7 @@
 
 // Media Queries
 @media (max-width: 575.98px) {
-  #individual-main-content{
+  #individual-page{
     .main-content .individual-content{
 
       .hero-text-container{
