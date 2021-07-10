@@ -1,11 +1,30 @@
 
 'use strict';
 
-const scheduleBtns = document.querySelectorAll('.schedule-btns');
-scheduleBtns.forEach(scheduleBtn => {
-  scheduleBtn.addEventListener('click', emailPage)
-});
+function showCalendar() {
+  const calendar = document.querySelector('.calendar-container');
+  calendar.classList.add('displa-calendar');
+};
 
-function emailPage() {
-  window.location = './email-confirmation.html';
+function hideCalendar() {
+  const calendar = document.querySelector('.calendar-container');
+  calendar.classList.remove('displa-calendar');
+};
+
+function selectDate(date) {
+  $('.calendar-wrapper').updateCalendarOptions({
+    date: date
+  });
 }
+
+const defaultConfig = {
+  weekDayLength: 1,
+  date: new Date(),
+  onClickDate: selectDate,
+  showYearDropdown: true,
+  startOnMonday: true,
+};
+
+$('.calendar-wrapper').calendar(defaultConfig);
+
+$('#calendar').calendar();

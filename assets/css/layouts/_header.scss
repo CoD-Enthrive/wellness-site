@@ -1,11 +1,10 @@
 .header{
   background-color: transparent;
-  padding: .3em 0;
+  padding: 0;
 
   .header-content{
     @include flex-between;
     align-items: center;
-    // border: 1px solid red;
 
     .logo h4{
       margin-bottom: 0
@@ -16,11 +15,13 @@
       align-items: center;
       
       .counseling{
-        margin-right: 1em;
-        p{
+        margin-right: .5em;
+        .direct-counseling{
+          display: block;
           background-image: url('./../images/menubg.png');
           background-repeat: round;
           background-position: left;
+          color: $white;
           padding: 17px;
           margin: 0;
           margin-top: 7px;
@@ -31,7 +32,7 @@
       .login a{
         display: block;
         color: $white;
-        padding: 2px 6px;
+        padding: 1px 6px;
       }
 
     }
@@ -56,7 +57,7 @@
     .login-container{
       .counseling{
         margin-right: .5em;
-        p{
+        .direct-counseling{
           font-size: .9rem;
         }
       }

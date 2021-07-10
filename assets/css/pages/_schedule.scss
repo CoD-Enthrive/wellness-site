@@ -1,77 +1,200 @@
-#schedule-main-content{
+#schedule-page{
   background: $white-400;
   @include page-height;
 
-  .progress-bar{
-    width: 75%;
+  .progress-bar .progress{
+    width: 60%;
+    animation: progressSeventy 4s; 
   }
 
   // Styling for main content
   .main-content{
     @include main-content-padding;
 
-    .date-picker{
-      text-align: center;
-      .input-groups{
-        label{
-          font-size: 1.125rem;
-          color: $dark;
-        }
-        input{
-          background-color: transparent;
-          border: 1px solid $dark;
-          border-radius: 4px;
-          padding-left: 6px;
-          padding-right: 6px;
-          margin-left: .3em;
-          font-size: 1.125rem;
-          color: $dark;
-          &::placeholder{
-            color: $dark;
-          }
-        }
-      }
-    }
+    #scheduling-wrapper{
+      @include flex-between;
+      align-items: flex-start;
+  
+      .calendar-container{
 
-    .schedule-container{
-      padding-top: 2em;
+        .calendar-flex{
+          background-color: $white;
+          border-radius: 6px;
+          padding: 1em;
+          box-shadow: $boxshadow;
 
-      .table{
-        border: 1px solid $dark;
-        width: 100%;
-        margin: 0;
-
-        tbody{
-          tr{
-            border: none;
-            border-bottom: 1px solid gray;
-            td{
-              padding-top: .8em;
-              .scedule-date{
-                font-size: 1.125rem;
-                color: $dark;
+          .btn-wrapper{
+            display: none;
+            background-color: $gray-100;
+            padding-top: 1em;
+            border-radius: 0 0 6px 6px;
+            #close-calendar{
+              border: 1.5px solid $blue;
+              border-radius: 6px;
+              background-color: $blue;
+              font-size: 1.125rem;
+              color: $white;
+              padding: .2em 1em;
+              transition: $link-transition;
+              &:hover{
+                color: $blue;
+                background-color: transparent;
               }
             }
           }
-        }
 
-        tfoot{
-          border: none;
-          border-bottom: 1px solid $dark;
-          tr{
-            border: none;
-            td{
-              text-align: center;
-              padding-top: 1em;
-              padding-bottom: 1.2em;
-            }
+          .calendar-wrapper{
+            color: $dark;
           }
+
         }
 
       }
 
+      .pick-date-wrapper{
+        display: none;
+        padding-bottom: 2em;
+        #show-calendar{
+          border: 1.5px solid $blue;
+          border-radius: 6px;
+          background-color: $white;
+          color: $blue;
+          padding: .3em 1em;
+        }
+      }
+  
+      .availabelity{
+        background-color: $white;
+        border-radius: 6px;
+        padding: 1em;
+        box-shadow: $boxshadow;
+  
+        .day-time-wrapper{
+          padding: 1em 0;
+          border-bottom: 1px solid $gray-100;
+          &:last-child{
+            border-bottom: none;
+          }
+  
+          .day-time{
+            display: flex;
+            align-items: flex-start;
+            .icons-container{
+              margin-right: 0.75em;
+              .icon{
+                font-size: 1.6rem;
+                color: $orange;
+              }
+            }
+  
+            .time-container{
+              h5{
+                margin-bottom: .4px;
+              }
+              p{
+                color: $gray-900;
+                margin: 0;
+              }
+            }
+  
+          }
+  
+          .availablity-times{
+            padding: 2em 0 .5em 0;
+  
+            .availablity-btn{
+              border: 1.5px solid $blue;
+              border-radius: 6px;
+              background-color: $blue;
+              color: $white;
+              width: 124px;
+              padding: .4em 1em;
+              margin-right: .3em;
+              margin-bottom: .5em;
+              transition: $link-transition;
+              &:hover{
+                background-color: transparent;
+                color: $blue;
+              }
+            }
+  
+          }
+  
+        }
+  
+        .shedule-bnt-wrapper{
+          padding-top: 2em;
+          padding-bottom: 1em;
+          button{
+            border: 1.5px solid $blue;
+            border-radius: 30px;
+            background-color: $blue;
+            color: $white;
+            font-size: 1.25rem;
+            padding: .3em 1.4em;
+            transition: $link-transition;
+            &:hover{
+              background-color: transparent;
+              color: $blue;
+            }
+          }
+        }
+  
+      }
+  
     }
 
   }
 
+}
+
+@keyframes progressSeventy {
+  0%   { width: 40%; background-color: #9acf86;}
+  100% { width: 60%; background-color: $green; }
+}
+
+@media (max-width: 767.98px) {
+  #schedule-page .main-content #scheduling-wrapper{
+    .calendar-container{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: rgba(0, 0, 0, .7);
+      z-index: 99;
+      display: none;
+      .calendar-flex{
+        background-color: $gray-100;
+        border-radius: 6px;
+        padding: 1em;
+        margin-top: 3em;
+        box-shadow: none;
+
+        .btn-wrapper{
+          display: block;
+        }
+
+        .calendar-wrapper{
+          background-color: $white;
+          border-radius: 6px;
+          padding: 1em;
+          box-shadow: $boxshadow;
+        }
+
+      }
+
+    }
+    .pick-date-wrapper{
+      display: block;
+    }
+
+    // Class for JS
+    .displa-calendar{
+      display: flex;
+    }
+  }
 }

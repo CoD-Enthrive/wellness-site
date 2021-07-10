@@ -1,9 +1,14 @@
-#aboutapp-main-content{
+#aboutapp-page{
   background: linear-gradient(#9adbfd, #53abed);
   @include page-height;
 
-  .progress-bar{
-    width: 50%;
+  .progress-bar .progress{
+    width: 40%;
+    animation: progressFifty 4s; 
+  }
+
+  .return-link-container .return-link:hover{
+    color: $black
   }
 
   // Styling for main content
@@ -20,7 +25,7 @@
       padding-bottom: 1em;
 
       .clients{
-        @include flex-end;
+        @include flex-center;
         margin-bottom: 1.4em;
         .about-client{
           text-align: right;
@@ -49,23 +54,10 @@
 
     }
 
-    .btn-container{
-      display: flex;
-      padding-top: 2em;
-      button{
-        width: 100%;
-      }
-    }
-
   }
 
 }
-
-// Media Queries
-@media (max-width: 767.98px) {
-  #aboutapp-main-content{
-    .main-content .clinets-container .clients{
-      justify-content: center;
-    }
-  }
+@keyframes progressFifty {
+  0%   { width: 20%; background-color: #9acf86;}
+  100% { width: 40%; background-color: $green; }
 }

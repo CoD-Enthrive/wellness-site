@@ -1,4 +1,4 @@
-#home-main-content{
+#home-page{
   background-image: url("./../images/wellness-home.png");
   @include main-bg-image;
 
@@ -39,7 +39,7 @@
             border-radius: 20px;
             font-size: 1.2rem;
             color: $white;
-            @include link-transition;
+            transition: $link-transition;
             &:hover{
               padding-left: 24px;
             }
@@ -59,7 +59,7 @@
 
 // Media Queries
 @media (max-width: 575.98px) {
-  #home-main-content{
+  #home-page{
 
     .main-content{
 
@@ -81,7 +81,7 @@
 }
 
 @media (max-width: 374.98px) {
-  #home-main-content{
+  #home-page{
 
     .main-content{
 

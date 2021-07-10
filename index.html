@@ -6,21 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap Link -->
   <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.min.css">
-  <!-- Robotogoogle fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <!-- Roboto-slab google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Custom CSS Link -->
   <link rel="stylesheet" href="./assets/css/app.css">
   <title>Home</title>
 </head>
 <body>
 
-  <!-- Start of main-content -->
-  <main id="home-main-content">
+  <!-- Start of page content -->
+  <div id="home-page">
 
     <!-- Star of Header -->
-    <div class="header">
+    <header class="header">
       <div class="container">
         <div class="row">
           <div class="col-12 header-content">
@@ -31,7 +27,7 @@
 
             <div class="login-container">
               <div class="counseling">
-                <p>Free Counseling </p>
+                <a class="direct-counseling" href="./pages/schedule.html">Free Counseling </a>
               </div>
               <div class="login">
                 <a href="#">Login</a>
@@ -41,7 +37,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </header>
     <!-- End of Header -->
 
     <!-- Start of main content -->
@@ -59,13 +55,13 @@
           <ul class="list">
 
             <!-- Link 1 -->
-            <li class="links-list"><a href="./individual.html" class="links">
+            <li class="links-list"><a href="./pages/individual.html" class="links">
               <span class="icon"><i class="far fa-chevron-double-right"></i></span> 
               Individuals
             </a></li>
 
             <!-- Link 2 -->
-            <li class="links-list"><a href="./couple.html" class="links">
+            <li class="links-list"><a href="./pages/couple.html" class="links">
               <span class="icon"><i class="far fa-chevron-double-right"></i></span> 
               Couples
             </a></li>
@@ -83,45 +79,48 @@
     </div>
     <!-- End of main content -->
 
-  </main>
-  <!-- Start of main-content -->
+  </div>
+  <!-- Start of page content -->
 
   <!-- Start of Footer -->
   <footer class="footer">
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-1 col-md-1 col-sm-12 logo-container">
-          <a href="#"><h2>W</h2></a>
+        <div class="col-lg-3 col-md-3 col-sm-12 logo-container">
+          <a href="#"><img class="logo" src="./assets/images/logo.png" alt="Logo"></a>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus earum possimus.</p>
         </div>
 
         <!-- What We offer links -->
-        <div class="col-lg-2 col-md-3 col-6 links-container">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
           <h5>What We Offer</h5>
           <ul class="footer-links-list">
-            <li><a href="./individual.html">For Individuals</a></li>
-            <li><a href="./couple.html">For Couples</a></li>
+            <li><a href="./pages/individual.html">For Individuals</a></li>
+            <li><a href="./pages/couple.html">For Couples</a></li>
             <li><a href="#">For Employers</a></li>
             <li><a href="#">Mobile App</a></li>
           </ul>
         </div>
 
         <!-- Condition links -->
-        <div class="col-lg-2 col-md-3 col-6 links-container">
-          <h5>Conditions</h5>
-          <ul class="footer-links-list">
-            <li><a href="#">Depression</a></li>
-            <li><a href="#">Anxiety</a></li>
-            <li><a href="#">Panic Attacks</a></li>
-            <li><a href="#">PTSD</a></li>
-            <li><a href="#">OCD</a></li>
-            <li><a href="#">Bipolar</a></li>
-            <li><a href="#">Other</a></li>
-          </ul>
+        <div class="col-lg-3 col-md-2 col-sm-3 col-6 links-container">
+          <div class="condition-links">
+            <h5>Conditions</h5>
+            <ul class="footer-links-list">
+              <li><a href="#">Depression</a></li>
+              <li><a href="#">Anxiety</a></li>
+              <li><a href="#">Panic Attacks</a></li>
+              <li><a href="#">PTSD</a></li>
+              <li><a href="#">OCD</a></li>
+              <li><a href="#">Bipolar</a></li>
+              <li><a href="./pages/self-care.html">Self Care</a></li>
+            </ul>
+          </div>
         </div>
 
         <!-- Our Company links -->
-        <div class="col-lg-2 col-md-3 col-6 links-container">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
           <h5>Our Company</h5>
           <ul class="footer-links-list">
             <li><a href="#">About Us</a></li>
@@ -135,7 +134,7 @@
         </div>
 
         <!-- Social icons links -->
-        <div class="col-lg-5 col-md-2 col-6 social-links">
+        <div class="col-lg-2 col-md-1 col-sm-3 col-6 social-links">
           <ul class="social-links-list">
             <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
@@ -145,7 +144,7 @@
 
         <!-- Copyrights descriptions -->
         <div class="col-12 copyrights">
-          <p>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span class="additionl-resource"><a href="./resources.html" class="underline-link">Additional resource.</a></span></p>
+          <p>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span class="additionl-resource"><a href="./pages/resources.html" class="underline-link">Additional resource.</a></span></p>
           <p>Copyright &copy; <span id="copyright_date">2020</span> Wellness Inc, All rights reserved.</p>
         </div>
 

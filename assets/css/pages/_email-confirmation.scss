@@ -1,9 +1,10 @@
-#email-confirm-content{
+#email-confirm-page{
   background: $white-400;
   @include page-height;
 
-  .progress-bar{
-    width: 85%;
+  .progress-bar .progress{
+    width: 80%;
+    animation: progressNinty 4s;
   }
 
   // Styling for main content
@@ -23,6 +24,9 @@
         .inputs-contianer{
           border: 1px solid $dark;
           padding: 1em 2em 2.5em 2em;
+          &:first-child{
+            border-bottom: none;
+          }
 
           .form-group{
             width: 80%;
@@ -112,7 +116,7 @@
 }
 
 @media (max-width: 767.98px) {
-  #email-confirm-content{
+  #email-confirm-page{
     .main-content{
       padding-bottom: 2em;
       .form-container{
@@ -129,10 +133,6 @@
             }
           }
 
-          .submit-container{
-            padding: 0 2em;
-          }
-
         }
       }
     }
@@ -140,7 +140,7 @@
 }
 
 @media (max-width: 475.98px) {
-  #email-confirm-content{
+  #email-confirm-page{
     .main-content .form-container .confirm-email-form .inputs-contianer{
       .form-group .user-name-wrapper{
         flex-direction: column;
@@ -150,4 +150,9 @@
       }
     }
   }
+}
+
+@keyframes progressNinty {
+  0%   { width: 60%; background-color: #9acf86;}
+  100% { width: 80%; background-color: $green; }
 }

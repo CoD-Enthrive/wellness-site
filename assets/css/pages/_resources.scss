@@ -1,14 +1,7 @@
-#resources-main-content{
+#resources-page{
   background: $white-400;
   @include page-height;
   color: $dark;
-
-  .blue-header{
-    background-color: $blue;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.16);
-  }
 
   // Styling for Main Content
   .main-content{
@@ -17,18 +10,26 @@
     .resource-container{
 
       h2{
-        font-weight: 400;
+        font-weight: 500;
         color: $black;
+      }
+      .blue-text{
+        color: $black;
+        font-size: 1.25rem;
       }
 
       .resource-content{
         margin-top: 2em;
-        margin-bottom: 2em;
+        margin-bottom: 3em;
+        h4{
+          color: $black;
+          font-size: 1.8rem;
+        }
         p{
-          font-size: 1.25rem;
+          font-size: 1.125rem;
           margin: 0;
           .underline-link{
-            @include link-transition;
+            transition: $link-transition;
             &:hover{
               color: $blue;
             }
@@ -42,7 +43,7 @@
             a{
               font-size: 1.25rem;
               word-break: break-all;
-              @include link-transition;
+              transition: $link-transition;
               &:hover{
                 color: $blue;
               }
@@ -58,7 +59,7 @@
 }
 
 @media (max-width: 575.98px) {
-  #resources-main-content{
+  #resources-page{
     .main-content .resource-container .resource-content{
 
       p{
