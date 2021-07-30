@@ -2,69 +2,59 @@
   background: $white-400;
   @include page-height;
 
-  .progress-bar .progress{
-    width: 100%;
-    animation: progressCompleted 3s;
-  }
-
-  // Styling for Main Content
-  .main-content{
-    @include main-content-padding;
-
-    .content-container{
-      border: 1px solid $dark;
-      padding-top: 1em;
-      padding-bottom: 1em;
-      .texts-wrapper{
-        width: 40%;
-        margin: auto;
-        color: $dark;
-        p{
-          text-align: center;
-        }
-      }
-      .link-text{
-        text-align: center;
-        color: $dark;
-        margin-bottom: 0;
-        a{
-          transition: $link-transition;
-          &:hover{
-            color: $blue;
-          }
-        }
-      }
+  .progress-bar{
+    .progress{
+      width: 100%;
+      animation: progressCompleted 3s;
     }
-
+    .enroll-confirmation{
+      animation: enrolled 3s;
+    }
   }
 
 }
 
-@media (max-width: 991.98px){
-  #confirm-page{
-    .main-content .content-container .texts-wrapper{
+.content-container{
+  border: 1px solid $dark;
+  padding: 1em .75em;
+  .texts-wrapper{
+    width: 40%;
+
+    @media (max-width: $medium-screen) {
       width: 60%;
     }
-  }
-}
-
-@media (max-width: 767.98px){
-  #confirm-page{
-    .main-content .content-container .texts-wrapper{
+    @media (max-width: $small-screen) {
       width: 80%;
     }
-  }
-}
-
-@media (max-width: 575.98px) {
-  #confirm-page{
-    .main-content .content-container .texts-wrapper{
+    @media (max-width: $extra-small-screen) {
       width: 100%;
+    }
+
+    margin: auto;
+    color: $dark;
+    p{
+      text-align: center;
+    }
+  }
+  .link-text{
+    text-align: center;
+    color: $dark;
+    margin-bottom: 0;
+    a{
+      transition: $link-transition;
+      &:hover{
+        color: $blue;
+      }
     }
   }
 }
 
 @keyframes progressCompleted {
   0%   { width: 80%; background-color: #9acf86;}
+  100% { width: 100%; background-color: $green; }
+}
+
+@keyframes enrolled {
+  0%   { width: 66%; background-color: #9acf86;}
   100% { width: 100%; background-color: $green; }
 }

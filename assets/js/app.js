@@ -2,9 +2,7 @@
 'use strict';
 
 // Adding current year to the Footer
-const copyrightDate = document.getElementById('copyright_date');
-const currentYear = new Date().getFullYear()
-copyrightDate.textContent = currentYear;
+document.getElementById('copyright_date').textContent = new Date().getFullYear();
 
 // sticky header
 const navbar = document.querySelector('.header');
@@ -20,3 +18,14 @@ window.addEventListener('scroll', function() {
     heroContainer.style.paddingTop = '2em';
   }
 });
+
+// const navHeight = nav.getBoundingClientRect().height;
+// const stickyNav = function(entries) {
+//   const [entry] = entries;
+
+//   if(!entry.isIntersecting) nav.classList.add('sticky');
+//   else nav.classList.remove('sticky');
+// }
+
+// const headerObserver = new IntersectionObserver(stickyNav, {root: null, threshold: 0, rootMargin: `-${navHeight}px`});
+// headerObserver.observe(header);

@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- browser icon -->
+  <link rel="shortcut icon" type="image/jpg" href="./../assets/images/wellness-icon.ico">
   <!-- Bootstrap Link -->
-  <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.min.css">
-  <!-- Robotogoogle fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <!-- Roboto-slab google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css">
   <!-- Custom CSS Link -->
-  <link rel="stylesheet" href="./assets/css/app.css">
+  <link rel="stylesheet" href="./../assets/css/app.css">
   <title>Confirmation</title>
 </head>
 <body>
 
-  <!-- Start of main-content -->
-  <main id="email-confirm-content">
-    <div class="progress-bar"></div>
+  <!-- Start of page content -->
+  <div id="payment-page">
+    
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
 
     <!-- Star of Return-link -->
     <div class="container">
@@ -26,10 +27,8 @@
         <div class="col-12 return-link-container">
 
           <a class="return-link black-text" href="#" onclick="history.go(-1)">
-            <i class="far fa-chevron-left"></i>
+            <i class="fas fa-chevron-left"></i>
           </a>
-
-          <h4 class="sub-title black-text">Email confirmation</h4>
 
         </div>
       </div>
@@ -41,13 +40,13 @@
 
       <div class="row">
         <div class="col-12 form-container">
-          <p>Your free online consultaion: Monday May 7th 10:00 AM</p>
+          <h4 class="text-center black-text">Your payment details</h4>
 
-          <form action="#" class="confirm-email-form">
+          <form action="#" class="form-field">
 
-            <!-- Required -->
+            <!-- Start of Required -->
             <div class="inputs-contianer">
-              <p>Required:</p>
+              <p class="form-text">Required:</p>
               <div class="form-group">
                 <div class="user-name-wrapper">
                   <div class="input-group">
@@ -62,12 +61,25 @@
                   <span class="input-group-text"><i class="fal fa-envelope-open-text"></i></span>
                   <input type="email" name="email" placeholder="Email" required>
                 </div>
+                <div class="user-name-wrapper">
+                  <div class="input-group">
+                    <span class="input-group-text credit-card"><i class="far fa-credit-card"></i></span>
+                    <input type="number" name="card-number" id="card-number" placeholder="Card Number" required>
+                  </div>
+                  <div class="input-group">
+                    <input type="number" name="cvv" placeholder="CVV" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <input class="expire-date" type="date" name="expire-date" placeholder="Expiration Date" required>
+                </div>
               </div>
             </div>
+            <!-- End of Required -->
 
             <!-- Optional -->
             <div class="inputs-contianer">
-              <p>Optional:</p>
+              <p class="form-text">Optional:</p>
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-text"><i class="fal fa-phone-alt phone-icon"></i></span>
@@ -81,14 +93,17 @@ for your scheduled consultation?"></textarea>
               </div>
             </div>
 
+            <!-- Start of large bottom button -->
             <div class="row">
-              <div class="col-lg-4 col-md-2 col-sm-1 d-sm-block d-none"></div>
-              <div class="col-lg-4 col-md-8 col-sm-10 submit-container">
-                <p>If you don't see an email within a few minutes, be sure to check your spam folder</p>
-                <button type="button" class="linear-btn" onclick="window.location= 'confirm.html'">Confirm</button>
+              <div class="col-lg-4 col-md-3 col-sm-2 col-1"></div>
+              <div class="col-lg-4 col-md-6 col-sm-8 col-10">
+                <div class="linear-btn-container">
+                  <button type="button" class="linear-btn blue-btn" onclick="window.location= 'member-schedule.html'">Pay and Continue</button>
+                </div>
               </div>
-              <div class="col-lg-4 col-md-2 col-sm-1 d-sm-block d-none"></div>
+              <div class="col-lg-4 col-md-3 col-sm-2 col-1"></div>
             </div>
+            <!-- End of large bottom button -->
 
           </form>
 
@@ -98,14 +113,14 @@ for your scheduled consultation?"></textarea>
     </div>
     <!-- End of main content -->
 
-  </main>
-  <!-- Start of main-content -->
+  </div>
+  <!-- Start of page content -->
 
 
 <!-- Bootstrap JS link -->
-<script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="./../vendors/bootstrap/js/bootstrap.bundle.js"></script>
 <!-- FontAwsome JS link -->
-<script src="./vendors/fontawesome/fontawesome.js"></script>
+<script src="./../vendors/fontawesome/fontawesome.js"></script>
 
 </body>
 </html>

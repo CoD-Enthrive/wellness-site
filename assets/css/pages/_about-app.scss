@@ -13,50 +13,50 @@
 
   // Styling for main content
   .main-content{
-    @include main-content-padding;
 
     .counseling{
       text-align: center;
       margin-bottom: 1.4em;
     }
 
-    .clinets-container{
-      padding-top: 2em;
-      padding-bottom: 1em;
-
-      .clients{
-        @include flex-center;
-        margin-bottom: 1.4em;
-        .about-client{
-          text-align: right;
-          margin-right: 1em;
-          p{
-            margin: 0;
-          }
-        }
-        .client-profile{
-          @include flex-column-center;
-          .img-container{
-            width: 76px;
-            height: 76px;
-            border-radius: 50%;
-            overflow: hidden;
-            img{
-              max-width: 100%;
-              height: auto;
-            }
-          }
-          p{
-            margin: 0;
-          }
-        }
-      }
-
-    }
-
   }
 
 }
+
+.clinets-container{
+  padding-top: 2em;
+  padding-bottom: 1em;
+
+  .clients{
+    @include flex-center;
+    margin-bottom: 1.4em;
+    .about-client{
+      text-align: right;
+      margin-right: 1em;
+      p{
+        margin: 0;
+      }
+    }
+    .client-profile{
+      @include flex-column-center;
+      .img-container{
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      p{
+        margin: 0;
+      }
+    }
+  }
+
+}
+
 @keyframes progressFifty {
   0%   { width: 20%; background-color: #9acf86;}
   100% { width: 40%; background-color: $green; }
