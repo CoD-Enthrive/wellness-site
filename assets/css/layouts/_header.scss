@@ -15,24 +15,23 @@
       align-items: center;
       
       .counseling{
-        margin-right: .5em;
+
         .direct-counseling{
           display: block;
           background-image: url('./../images/menubg.png');
           background-repeat: round;
           background-position: left;
+
+          @media (max-width: $extra-small-screen){
+            font-size: .9rem;
+          }
+
           color: $white;
           padding: 17px;
           margin: 0;
           margin-top: 7px;
-          padding-top: 4px;
+          padding-top: 6px;
         }
-      }
-
-      .login a{
-        display: block;
-        color: $white;
-        padding: 1px 6px;
       }
 
     }
@@ -48,23 +47,6 @@
   left: 0;
   width: 100%;
   background-color: $blue;
-  box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.16);
+  box-shadow: $header-shadow;
   z-index: 99;
-}
-
-@media (max-width: 575.98px) {
-  .header .header-content{
-    .login-container{
-      .counseling{
-        margin-right: .5em;
-        .direct-counseling{
-          font-size: .9rem;
-        }
-      }
-      .login a{
-        font-size: .9rem;
-        padding: 0 4px 2px 4px;
-      }
-    }
-  }
 }

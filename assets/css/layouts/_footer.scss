@@ -6,7 +6,16 @@
   .logo-container{
     margin-bottom: 1em;
     .logo{
-      max-width: 50%;
+      max-width: 93px;
+      height: auto;
+
+      @media (max-width: $small-screen) {
+        width: 80px;
+      }
+      @media (max-width: $extra-small-screen) {
+        width: 70px;
+      }
+
       height: auto;
       margin-bottom: 1em;
     }
@@ -21,6 +30,18 @@
       width: 62%;
       margin: auto;
       padding-left: 1em;
+
+      @media (max-width: $medium-screen) {
+        width: 100%;
+        margin-left: -1em;
+      }
+
+      @media (max-width: $small-screen){
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
     }
     .footer-links-list{
       li{
@@ -41,10 +62,23 @@
     @include flex-end;
     align-items: flex-start;
     margin-bottom: 1em;
+
+    @media (max-width: $small-screen){
+      justify-content: flex-start;
+    }
+
     .social-links-list{
       display: flex;
       li{
         margin-left: .4em;
+        @media(max-width: $small-screen) {
+          margin-left: 0;
+          margin-right: .4em;
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+
         a{
           display: block;
           font-size: 1.6rem;
@@ -66,6 +100,11 @@
     border-top: 1px solid $gray-100;
     p{
       font-size: .9rem;
+
+      @media (max-width: $small-screen) {
+        font-size: .8rem;
+      }
+
       margin: 0;
       &:first-child{
         margin-bottom: .5em;
@@ -76,49 +115,4 @@
     }
   }
 
-}
-
-@media (max-width: 991.98px) {
-  .footer .links-container .condition-links{
-    width: 100%;
-    padding-left: 0;
-    margin-left: -1em;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .footer{
-
-    .logo-container .logo{
-      width: 20%;
-    }
-
-    .links-container .condition-links{
-      width: 100%;
-      padding-left: 0;
-      margin-left: 0;
-    }
-
-    .social-links{
-      justify-content: flex-start;
-      .social-links-list li{
-        margin-left: 0;
-        margin-right: .4em;
-        &:last-child{
-          margin-right: 0;
-        }
-      }
-    }
-
-    .copyrights p{
-      font-size: .8rem;
-    }
-
-  }
-}
-
-@media (max-width: 575.98px) {
-  .footer .logo-container .logo{
-    width: 30%;
-  }
 }

@@ -1,0 +1,15 @@
+#payment-page{
+  background: $white-400;
+  @include page-height;
+
+  .progress-bar .progress{
+    width: 33%;
+    animation: thirty 4s;
+  }
+
+}
+
+@keyframes thirty {
+  0%   { width: 0%; background-color: #9acf86;}
+  100% { width: 33%; background-color: $green; }
+}

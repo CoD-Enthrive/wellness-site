@@ -3,73 +3,57 @@
   @include page-height;
   color: $dark;
 
-  // Styling for Main Content
-  .main-content{
-    @include main-content-padding;
-
-    .resource-container{
-
-      h2{
-        font-weight: 500;
-        color: $black;
-      }
-      .blue-text{
-        color: $black;
-        font-size: 1.25rem;
-      }
-
-      .resource-content{
-        margin-top: 2em;
-        margin-bottom: 3em;
-        h4{
-          color: $black;
-          font-size: 1.8rem;
-        }
-        p{
-          font-size: 1.125rem;
-          margin: 0;
-          .underline-link{
-            transition: $link-transition;
-            &:hover{
-              color: $blue;
-            }
-          }
-        }
-        .resource-links-list{
-          padding: 0 1em;
-          margin: 1em;
-          li{
-            list-style-type: disc;
-            a{
-              font-size: 1.25rem;
-              word-break: break-all;
-              transition: $link-transition;
-              &:hover{
-                color: $blue;
-              }
-            }
-          }
-        }
-      }
-
-    }
-    
-  }
-
 }
 
-@media (max-width: 575.98px) {
-  #resources-page{
-    .main-content .resource-container .resource-content{
+.resource-container{
 
-      p{
+  h2{
+    font-weight: 500;
+    color: $black;
+  }
+  .blue-text{
+    color: $black;
+    font-size: 1.25rem;
+  }
+
+  .resource-content{
+    margin-top: 2em;
+    margin-bottom: 3em;
+    h4{
+      color: $black;
+      font-size: 1.8rem;
+    }
+    p{
+      font-size: 1.125rem;
+      @media (max-width: $extra-small-screen) {
         font-size: 1rem;
       }
-
-      .resource-links-list li a{
-        font-size: 1rem;
+      margin: 0;
+      .underline-link{
+        transition: $link-transition;
+        &:hover{
+          color: $blue;
+        }
       }
-
+    }
+    .resource-links-list{
+      padding: 0 1em;
+      margin: 1em;
+      li{
+        list-style-type: disc;
+        a{
+          font-size: 1.25rem;
+          @media (max-width: $extra-small-screen) {
+            font-size: 1rem;
+          }
+          word-break: break-all;
+          transition: $link-transition;
+          &:hover{
+            color: $blue;
+          }
+        }
+      }
     }
   }
+
 }

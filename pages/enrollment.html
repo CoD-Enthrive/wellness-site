@@ -10,70 +10,113 @@
   <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css">
   <!-- Custom CSS Link -->
   <link rel="stylesheet" href="./../assets/css/app.css">
-  <title>Confirm</title>
+  <title>Enrollment</title>
 </head>
 <body>
-
   <!-- Start of page content -->
-  <div id="confirm-page">
-    
-    <div class="progress-bar">
-      <div class="progress"></div>
-    </div>
+  <div id="enrollment-page">
 
-    <!-- Star of Return-link -->
-    <div class="container">
-      <div class="row">
-        <div class="col-12 return-link-container">
+    <!-- Star of Header -->
+    <header class="header blue-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 header-content">
 
-          <a class="return-link black-text" href="#" onclick="history.go(-1)">
-            <i class="fas fa-chevron-left"></i>
-          </a>
+            <div class="logo">
+              <h4>Wellness</h4>
+            </div>
 
-          <h4 class="sub-title black-text">Thank You! Appointment scheduled.</h4>
-
+          </div>
         </div>
       </div>
-    </div>
-    <!-- End of Return-link -->
+    </header>
+    <!-- End of Header -->
 
     <!-- Start of main content -->
     <div class="container main-content">
-
       <div class="row">
-        <div class="col-12">
-          
-          <div class="content-container">
-            <div class="texts-wrapper">
-              <p>We have sent you an email with your appointment details.</p>
-              <p>The day before your appointment, we will send you a confirmation message to make sure your schedule has not changed.</p>
-              <p>There will be instructions for how to join your counselor using an online video call.</p>
-            </div>
-  
-            <p class="link-text">Your free online consultation: Monday May 17th 10:30AM <span>&nbsp; &nbsp;<a href="./schedule.html" class="underline-link dark-text">Change</a></span></p>
-          </div>
-
+        <div class="col-12 enrollment-desc">
+          <h2>Memeber Enrollment</h2>
+          <p>EEnroll and schedule your first online counseling session.</p>
+          <p>Pay monthly to receive regular ongoing counseling.</p>
+          <p>Continue monthly for as long as you need.</p>
+          <div class="hr-line"></div>
+          <p>$100 per month</p>
+          <p>Includes two counseling sessions per month</p>
+          <p>Additional sessions $45 each</p>
+          <p>Full Wellness App access</p>
+          <p>Includes Online Chat support</p>
         </div>
 
         <!-- Start of large bottom button -->
-        <div class="row">
-          <div class="col-lg-4 col-md-3 col-sm-2 col-2"></div>
-          <div class="col-lg-4 col-md-6 col-8">
-            <div class="linear-btn-container">
-              <button type="button" class="linear-btn blue-btn" onclick="window.location = './self-care.html'">Finished</button>
-            </div>
+        <div class="col-lg-4 col-md-3 col-sm-2 col-1"></div>
+        <div class="col-lg-4 col-md-6 col-sm-8 col-10">
+          <div class="linear-btn-container">
+            <button type="button" class="linear-btn yellow-btn" onclick="window.location = './payment.html'">Pay and Enroll</button>
           </div>
-          <div class="col-lg-4 col-md-3 col-2"></div>
         </div>
+        <div class="col-lg-4 col-md-3 col-sm-2 col-1"></div>
         <!-- End of large bottom button -->
 
       </div>
 
+      <div class="row testimonial-container">
+        <div class="col-12">
+          <div class="testimonials">
+            <h4 class="black-text">Here are a few testimonials</h4>
+          </div>
+        </div>
+
+        <!-- Testimonial content 1 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="testimonial-content">
+            <p>I’ve been to several other counselors before and you have been the first that I’ve connected with that gave me a sense of hope for change. Thank you!</p>
+          </div>
+          <div class="testimonial-user">
+            <div class="user-image">
+              <img class="img-fluid" src="./../assets/images/user-icon.png" alt="image">
+            </div>
+            <div class="user-name">
+              <h6>JL</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial content 2 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="testimonial-content">
+            <p>When I needed that expert “push” you were there to do it. Thank you!</p>
+          </div>
+          <div class="testimonial-user">
+            <div class="user-image">
+              <img class="img-fluid" src="./../assets/images/user-icon.png" alt="image">
+            </div>
+            <div class="user-name">
+              <h6>SM</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial content 3 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="testimonial-content">
+            <p>When I was feeling ‘down and out’ you helped to lift me out of this darkness. The tools that I have gained through counseling with you will stick with me for the rest of my life. Thank you…</p>
+          </div>
+          <div class="testimonial-user">
+            <div class="user-image">
+              <img class="img-fluid" src="./../assets/images/user-icon.png" alt="image">
+            </div>
+            <div class="user-name">
+              <h6>TW</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <!-- End of main content -->
 
   </div>
-  <!-- Start of page content -->
+  <!-- End of page content -->
 
   <!-- Start of Footer -->
   <footer class="footer">
@@ -93,7 +136,7 @@
             <li><a href="./couple.html">For Couples</a></li>
             <li><a href="#">For Employers</a></li>
             <li><a href="#">Mobile App</a></li>
-            <li><a href="./enrollment.html">Member Enrollment</a></li>
+            <li><a href="#">Member Enrollment</a></li>
           </ul>
         </div>
 
@@ -147,11 +190,11 @@
   </footer>
   <!-- End of Footer -->
 
-
-<!-- Bootstrap JS link -->
-<script src="./../vendors/bootstrap/js/bootstrap.bundle.js"></script>
-<!-- FontAwsome JS link -->
-<script src="./../vendors/fontawesome/fontawesome.js"></script>
-
+  <!-- Bootstrap JS link -->
+  <script src="./../vendors/bootstrap/js/bootstrap.bundle.js"></script>
+  <!-- FontAwsome JS link -->
+  <script src="./../vendors/fontawesome/fontawesome.js"></script>
+  <!-- Custom JS link -->
+  <script src="./../assets/js/app.js"></script>
 </body>
 </html>
