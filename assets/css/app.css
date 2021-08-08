@@ -53,6 +53,11 @@ h5 {
   font-weight: 400;
 }
 
+h6 {
+  font-size: .9rem;
+  font-weight: 600;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -1726,22 +1731,18 @@ a {
   border-top: 1.5px solid #394d5c;
 }
 
-.testimonial-container {
-  padding-top: 3em;
-}
-
-.testimonial-container .testimonials {
+.underline-title {
   border-bottom: 1px solid #c5c5c5;
   margin-bottom: 1em;
 }
 
-.testimonial-container .testimonials h4 {
+.underline-title h4 {
   position: relative;
   display: inline-block;
   margin-bottom: 6px;
 }
 
-.testimonial-container .testimonials h4::after {
+.underline-title h4::after {
   content: '';
   position: absolute;
   left: 0;
@@ -1749,6 +1750,11 @@ a {
   width: 100%;
   height: 2px;
   background-color: #4ca9e0;
+}
+
+.testimonial-container {
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .testimonial-container .testimonial-content {
@@ -1793,6 +1799,68 @@ a {
 }
 
 .testimonial-container .testimonial-user .user-name {
+  color: #37383d;
+}
+
+.our-counselors {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.counselors {
+  margin-top: 1.4em;
+  padding: 0 1em;
+}
+
+.counselors .counselors-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.counselors .counselors-profile .counselors-image {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.counselors .counselors-profile .counselors-image img {
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.counselors .counselors-profile .counselors-image img:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.counselors .counselors-profile .counselors-name {
+  color: #4ca9e0;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 575.98px) {
+  .counselors .counselors-profile .counselors-name {
+    font-size: 1.1rem;
+  }
+}
+
+.counselors .counselors-about {
+  text-align: center;
+  color: #394d5c;
+  margin-top: .5em;
+}
+
+.counselors .counselors-about h6 {
   color: #37383d;
 }
 
@@ -1876,5 +1944,11 @@ a {
 .self-care-link:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+#about-us-page {
+  background-color: #f9efd8;
+  width: 100%;
+  min-height: 100vh;
 }
 /*# sourceMappingURL=app.css.map */
