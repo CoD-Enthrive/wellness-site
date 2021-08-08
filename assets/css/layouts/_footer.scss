@@ -1,6 +1,6 @@
 .footer{
   padding: 2em 0 1em 0;
-  background-color: $gray-900;
+  background-color: $black;
   margin-top: auto;
 
   .logo-container{
@@ -21,6 +21,9 @@
     }
     p{
       color: $gray-100;
+      @media (max-width: $medium-screen){
+        font-size: .9rem;
+      }
     }
   }
 
@@ -50,6 +53,9 @@
           display: block;
           color: $gray-100;
           transition: $link-transition;
+          @media (max-width: $medium-screen){
+            font-size: .9rem;
+          }
           &:hover{
             color: $white;
           }
@@ -101,8 +107,8 @@
     p{
       font-size: .9rem;
 
-      @media (max-width: $small-screen) {
-        font-size: .8rem;
+      @media (max-width: $medium-screen){
+        font-size: .9rem;
       }
 
       margin: 0;

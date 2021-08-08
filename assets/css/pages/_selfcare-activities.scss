@@ -12,44 +12,6 @@
     gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
     grid-auto-rows: auto;
-
-    .activity-cards{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      background-color: $green;
-      .card-image img{
-        width: 100%;
-        height: auto;
-      }
-      .card-texts{
-        padding: 1em;
-        text-align: center;
-      }
-      .card-links{
-        background-color: $blue;
-        padding: .5em;
-        margin-top: auto;
-        a{
-          padding: .3em 1em;
-          font-size: 1.125rem;
-          color: $white;
-          transition: $link-transition;
-          &:hover{
-            color: $dark;
-          }
-        }
-      }
-      .cards-audio{
-        padding: .3em 1em;
-        margin-top: auto;
-        audio{
-          width: 100%;
-          height: 28px;
-        }
-      }
-    }
-
   }
 
   .link-wrapper{
