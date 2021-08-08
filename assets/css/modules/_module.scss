@@ -72,7 +72,7 @@
     border: none;
     outline: none;
     background: $glassy-color;
-    padding: 4px 40px;
+    padding: 4px 20px;
     border-radius: 25px;
     font-size: 1.25rem;
     color: $white;
@@ -83,6 +83,61 @@
   .yellow-btn{
     background: $yellow-200;
     color: $black;
+  }
+  .condition-link{
+    display: inline;
+    width: auto;
+    padding: 6px 30px;
+  }
+}
+
+// Self-care activity && condition Cards
+.activity-cards{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $green;
+  .card-image img{
+    width: 100%;
+    height: auto;
+  }
+  .card-texts{
+    padding: 1em;
+    text-align: center;
+  }
+  .card-links{
+    padding: 0 1em .74em 1em;
+    margin-top: auto;
+    .links{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $gray;
+      padding: .2em .75em;
+      font-size: 1.125rem;
+      color: $black;
+      border-radius: 20px;
+      transition: all .3s ease;
+      .arrow-icon{
+        font-size: 1rem;
+        margin-left: 8px;
+        transition: $link-transition;
+      }
+      &:hover{
+        color: black;
+        .arrow-icon{
+          transform: translateX(30%);
+        }
+      }
+    }
+  }
+  .cards-audio{
+    padding: .3em 1em;
+    margin-top: auto;
+    audio{
+      width: 100%;
+      height: 34px;
+    }
   }
 }
 

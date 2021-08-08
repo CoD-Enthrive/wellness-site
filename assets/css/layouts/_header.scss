@@ -6,8 +6,17 @@
     @include flex-between;
     align-items: center;
 
-    .logo h4{
-      margin-bottom: 0
+    .logo-container .logo{
+      margin-bottom: 0;
+      font-size: 2rem;
+      color: $white;
+      font-weight: 500;
+      @media (max-width: $small-screen){
+        font-size: 1.8rem;
+      }
+      @media (max-width: $extra-small-screen){
+        font-size: 1.6rem;
+      }
     }
 
     .login-container{
