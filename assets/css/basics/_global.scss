@@ -10,6 +10,7 @@
 }
 
 body{
+  position: relative;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -86,6 +87,10 @@ a{
   font-size: 1.25rem;
 }
 
+.desc-text{
+  font-size: 1.125rem
+}
+
 .main-content{
   @include main-content-padding;
 }
@@ -97,6 +102,9 @@ a{
   h2{
     font-size: 2.6rem;
   }
+  h3{
+    font-size: 2.2rem;
+  }
   h4{
     font-size: 1.8rem;
   }
@@ -106,6 +114,9 @@ a{
   .title-desc{
     font-size: 1.125rem;
   }
+  .desc-text{
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -114,6 +125,9 @@ a{
   }
   h2{
     font-size: 2rem;
+  }
+  h3{
+    font-size: 1.8rem;
   }
   h4{
     font-size: 1.6rem;
@@ -132,6 +146,9 @@ a{
   }
   h2{
     font-size: 1.8rem;
+  }
+  h3{
+    font-size: 1.6rem;
   }
   h4{
     font-size: 1.4rem;

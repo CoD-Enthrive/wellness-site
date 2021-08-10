@@ -16,7 +16,7 @@ function hideCalendar() {
 // closing the calendar moddal with Escape key
 document.addEventListener('keydown', (e) => {
   if(e.key === 'Escape' && calendar.classList.contains('display-calendar')) {
-    hideCalendar()
+    hideCalendar();
   }
 });
 
