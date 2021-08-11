@@ -1,0 +1,181 @@
+#about-us-page{
+  .about-us-heading{
+    color: $black;
+    padding-bottom: 4em;
+  
+    // h1{
+    //   font-size: 3.8rem;
+    // }
+  }
+}
+
+#about-us{
+  background-color: $white;
+  padding: 2em 2em;
+  color: $black;
+  border-radius: 6px;
+  box-shadow: $card-shadow;
+}
+
+#our-team{
+  padding-top: 5em;
+
+  .teams{
+    padding: 2em 0 1em 0;
+    color: $black;
+
+    .teams-wrapper{
+      display: grid;
+      gap: 1em;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      margin-top: 2.5em;
+      .teams-member{
+        @include flex-vertical-center;
+        width: 100%;
+        color: $black;
+        padding: 0 .938em 1.5em .938em;
+        transition: all .3s linear;
+        cursor: pointer;
+        @media (max-width: $medium-screen) {
+          flex-direction: column;
+          text-align: center;
+        }
+        @media (max-width: $small-phone){
+          padding: 0 .5em 1em .5em;
+        }
+        &:hover{
+          color: $orange-200;
+          .member-inmage {
+            transform: scale(0.96);
+          }
+        }
+        .member-inmage{
+          width: 141px;
+          height: 141px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 2em;
+          transition: all .3s linear;
+          @media (max-width: $medium-screen){
+            width: 120px;
+            height: 120px;
+            margin: 0;
+            margin-bottom: 1em;
+          }
+          @media (max-width: $extra-small-screen){
+            width: 100px;
+            height: 100px;
+          }
+          img{
+            max-width: 100%;
+            height: auto;
+          }
+        }
+        .about-member{
+          h5{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+.member-popups{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0,0%,91%,.97);
+  border: 24px solid hsla(0,0%,100%,.97);
+  padding: 1em;
+  transition: all 0.4s linear;
+  opacity: .7;
+  visibility: hidden;
+  overflow-y: auto;
+  z-index: 999;
+
+  @media (max-width: $small-screen){
+    border-width: 10px;
+  }
+
+  .popups-container{
+    max-width: 800px;
+    margin: 0 auto;
+    .close-members-popup{
+      display: block;
+      margin-left: auto;
+      border: none;
+      outline: none;
+      padding: 0;
+      background: transparent;
+      font-size: 2.8rem;
+      color: $orange;
+      line-height: 1;
+      @media (max-width: $small-screen){
+        font-size: 2.2rem;
+      }
+    }
+
+    .member-about-container{
+      display: flex;
+      .text-wrapper{
+        width: calc(100% - 252px);
+
+        .name{
+          color: $dark-gray;
+          font-weight: 600;
+          @media (max-width: $small-screen){
+            text-align: center;
+          }
+        }
+
+        .description{
+          color: $black;
+          font-weight: 600;
+          margin-bottom: 1em;
+          @media (max-width: $small-screen){
+            text-align: center;
+          }
+        }
+        
+      }
+      .image-wrapper{
+        margin-left: 2em;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      @media (max-width: $small-screen) {
+        flex-direction: column;
+        .image-wrapper{
+          order: 1;
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+          margin-bottom: 1.4em;
+        }
+        .text-wrapper{
+          order: 2;
+          width: 100%;
+        }
+      }
+    }
+    
+
+  }
+}
+
+.show-member-popup{
+  visibility: visible;
+  opacity: 1;
+}
