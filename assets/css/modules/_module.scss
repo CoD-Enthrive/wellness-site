@@ -97,6 +97,8 @@
   flex-direction: column;
   width: 100%;
   background-color: $green;
+  border-radius: 4px;
+  overflow: hidden;
   .card-image img{
     width: 100%;
     height: auto;
@@ -106,7 +108,7 @@
     text-align: center;
   }
   .card-links{
-    padding: 0 1em .74em 1em;
+    padding: 0 1em 1em 1em;
     margin-top: auto;
     .links{
       display: flex;
@@ -132,7 +134,7 @@
     }
   }
   .cards-audio{
-    padding: .3em 1em;
+    padding: .5em 1em;
     margin-top: auto;
     audio{
       width: 100%;

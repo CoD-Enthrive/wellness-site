@@ -1,19 +1,12 @@
 #about-us-page{
-  background-color: $yellow-100;
-  @include page-height;
-
-  .main-content{
-    @include main-content-padding;
+  .about-us-heading{
+    color: $black;
+    padding-bottom: 4em;
+  
+    // h1{
+    //   font-size: 3.8rem;
+    // }
   }
-}
-
-.about-us-heading{
-  color: $black;
-  padding-bottom: 4em;
-
-  // h1{
-  //   font-size: 3.8rem;
-  // }
 }
 
 #about-us{
@@ -21,7 +14,7 @@
   padding: 2em 2em;
   color: $black;
   border-radius: 6px;
-  box-shadow: 3px 3px 25px 0 rgba(152, 113, 32, .25);
+  box-shadow: $card-shadow;
 }
 
 #our-team{
@@ -100,7 +93,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: hsla(0,0%,91%,.96);
+  background-color: hsla(0,0%,91%,.97);
   border: 24px solid hsla(0,0%,100%,.97);
   padding: 1em;
   transition: all 0.4s linear;
@@ -123,7 +116,7 @@
       outline: none;
       padding: 0;
       background: transparent;
-      font-size: 3rem;
+      font-size: 2.8rem;
       color: $orange;
       line-height: 1;
       @media (max-width: $small-screen){
