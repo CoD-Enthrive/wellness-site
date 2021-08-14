@@ -1,0 +1,272 @@
+#schedule-page .progress-bar .progress {
+  width: 60%;
+  -webkit-animation: progressSeventy 4s;
+          animation: progressSeventy 4s;
+}
+
+#schedule-page .progress-bar .member-progress {
+  width: 66%;
+  -webkit-animation: sixthySix 4s;
+          animation: sixthySix 4s;
+}
+
+#scheduling-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#scheduling-wrapper .calendar-container .calendar-flex {
+  background-color: var(--white);
+  border-radius: 6px;
+  padding: 1em;
+  -webkit-box-shadow: var(--boxshadow);
+          box-shadow: var(--boxshadow);
+}
+
+#scheduling-wrapper .calendar-container .calendar-flex .btn-wrapper {
+  display: none;
+  background-color: transparent;
+  margin-top: .5em;
+  padding-top: 1em;
+  border-radius: 0 0 6px 6px;
+}
+
+#scheduling-wrapper .calendar-container .calendar-flex .btn-wrapper #close-calendar {
+  border: 1.5px solid var(--blue);
+  border-radius: 6px;
+  background-color: var(--blue);
+  font-size: 1.125rem;
+  color: var(--white);
+  padding: .2em 1em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#scheduling-wrapper .calendar-container .calendar-flex .btn-wrapper #close-calendar:hover {
+  color: var(--blue);
+  background-color: transparent;
+}
+
+#scheduling-wrapper .calendar-container .calendar-flex .calendar-wrapper {
+  position: relative;
+  color: var(--dark);
+}
+
+#scheduling-wrapper .pick-date-wrapper {
+  display: none;
+  padding-bottom: 2em;
+}
+
+#scheduling-wrapper .pick-date-wrapper #show-calendar {
+  border: 1.5px solid var(--blue);
+  border-radius: 6px;
+  background-color: var(--white);
+  color: var(--blue);
+  padding: .3em 1em;
+}
+
+#scheduling-wrapper .availabelity {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 6px;
+  padding: 1em;
+  -webkit-box-shadow: var(--boxshadow);
+          box-shadow: var(--boxshadow);
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper {
+  padding: 1em 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper:last-child {
+  border-bottom: none;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .day-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .day-time .icons-container {
+  margin-right: 0.75em;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .day-time .icons-container .icon {
+  font-size: 1.6rem;
+  color: var(--orange);
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .day-time .time-container h5 {
+  margin-bottom: .4px;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .day-time .time-container p {
+  color: var(--gray-900);
+  margin: 0;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .availablity-times {
+  padding: 2em 0 .5em 0;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .availablity-times .availablity-btn {
+  border: 1.5px solid var(--blue);
+  border-radius: 6px;
+  background-color: var(--blue);
+  color: var(--white);
+  width: 124px;
+  padding: .4em 1em;
+  margin-right: .3em;
+  margin-bottom: .5em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .availablity-times .availablity-btn:hover {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .availablity-times .active {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+#scheduling-wrapper .availabelity .shedule-bnt-wrapper {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+#scheduling-wrapper .availabelity .shedule-bnt-wrapper button {
+  border: 1.5px solid var(--blue);
+  border-radius: 30px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1.25rem;
+  padding: .3em 1.4em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#scheduling-wrapper .availabelity .shedule-bnt-wrapper button:hover {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+@media (max-width: 767.98px) {
+  #scheduling-wrapper .calendar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #scheduling-wrapper .calendar-container .calendar-flex {
+    background-color: transparent;
+    border-radius: 6px;
+    margin-top: 3em;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #scheduling-wrapper .calendar-container .calendar-flex .btn-wrapper {
+    display: block;
+  }
+  #scheduling-wrapper .calendar-container .calendar-flex .calendar-wrapper {
+    border: none;
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 1em;
+    -webkit-box-shadow: var(--boxshadow);
+            box-shadow: var(--boxshadow);
+  }
+  #scheduling-wrapper .calendar-container .calendar-flex .calendar-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: var(--white) transparent transparent transparent;
+  }
+  #scheduling-wrapper .pick-date-wrapper {
+    display: block;
+  }
+}
+
+/* Class for JS */
+#scheduling-wrapper .display-calendar {
+  visibility: visible;
+  opacity: 1;
+}
+
+@-webkit-keyframes progressSeventy {
+  0% {
+    width: 40%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 60%;
+    background-color: var(--green);
+  }
+}
+
+@keyframes progressSeventy {
+  0% {
+    width: 40%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 60%;
+    background-color: var(--green);
+  }
+}
+
+@-webkit-keyframes sixthySix {
+  0% {
+    width: 33%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 66%;
+    background-color: var(--green);
+  }
+}
+
+@keyframes sixthySix {
+  0% {
+    width: 33%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 66%;
+    background-color: var(--green);
+  }
+}

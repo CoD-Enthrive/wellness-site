@@ -1,0 +1,117 @@
+#individual-page {
+  background-image: url("./../../images/wellness-individual.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#individual-page .return-link-container .return-link:hover {
+  color: var(--black);
+}
+
+#employers-page {
+  background-image: url("./../../images/employers.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#employers-page .return-link-container .return-link:hover {
+  color: var(--black);
+}
+
+.individual-content .hero-text-container .hero-title {
+  font-weight: 400;
+}
+
+.individual-content .hero-text-container .hero-text {
+  font-size: 1.4rem;
+}
+
+.individual-content .checkbox-container {
+  padding-top: 2em;
+}
+
+.individual-content .checkbox-container .checkbox-lists {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.individual-content .checkbox-container .checkbox-lists .checkbox-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: var(--linear-color);
+  border-radius: 30px;
+  padding: 4px 12px;
+  margin-bottom: .5em;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+
+.individual-content .checkbox-container .checkbox-lists .checkbox-links .check-box {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  display: block;
+  width: calc(100% - 20px);
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.individual-content .checkbox-container .checkbox-lists .checkbox-links .check-box:checked .custom-checkbox {
+  background: var(--linear-color);
+  opacity: 1;
+}
+
+.individual-content .checkbox-container .checkbox-lists .checkbox-links .custom-checkbox {
+  display: block;
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 50%;
+  background: var(--white);
+  margin-right: .5em;
+}
+
+.individual-content .checkbox-container .checkbox-lists .checkbox-links p {
+  margin: 0;
+}
+
+.individual-content .checkbox-container .checkbox-lists .checkbox-links .check-box:checked + .custom-checkbox {
+  background: var(--linear-color);
+  -webkit-box-shadow: var(--checkbox-shadow);
+          box-shadow: var(--checkbox-shadow);
+}
+
+.individual-content .checkbox-container p {
+  font-size: 1.25rem;
+}
+
+.individual-content .checkbox-container p span a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+@media (max-width: 575.98px) {
+  .individual-content .hero-text-container .hero-text {
+    font-size: 1rem;
+  }
+  .individual-content .checkbox-container .checkbox-lists .checkbox-links .check-box {
+    font-size: 1rem;
+  }
+  .individual-content .checkbox-container .checkbox-lists .checkbox-links p {
+    font-size: 1rem;
+  }
+  .individual-content .checkbox-container p {
+    font-size: 1rem;
+  }
+}

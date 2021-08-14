@@ -1,0 +1,27 @@
+#payment-page .progress-bar .progress {
+  width: 33%;
+  -webkit-animation: thirty 4s;
+          animation: thirty 4s;
+}
+
+@-webkit-keyframes thirty {
+  0% {
+    width: 0%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 33%;
+    background-color: var(--green);
+  }
+}
+
+@keyframes thirty {
+  0% {
+    width: 0%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 33%;
+    background-color: var(--green);
+  }
+}

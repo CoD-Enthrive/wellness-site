@@ -1,0 +1,76 @@
+#enrollment-page .main-content .enrollment-desc {
+  text-align: center;
+}
+
+#enrollment-page .main-content .enrollment-desc h2 {
+  font-weight: 500;
+  color: var(--black);
+}
+
+#enrollment-page .main-content .enrollment-desc p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--dark);
+  margin: 0;
+}
+
+#enrollment-page .main-content .enrollment-desc .hr-line {
+  margin: 1.5em auto;
+  border-top: 1.5px solid var(--dark);
+}
+
+.testimonial-container {
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+.testimonial-container .testimonial-content {
+  position: relative;
+  padding: 1em;
+  background-color: var(--white);
+  border-radius: 4px;
+  margin-top: 1.4em;
+  color: var(--dark);
+}
+
+.testimonial-container .testimonial-content::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 9px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: var(--white) transparent transparent transparent;
+}
+
+.testimonial-container .testimonial-user {
+  margin-top: 1.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial-container .testimonial-user .user-image {
+  width: 45px;
+  height: 45px;
+  margin-right: .75em;
+  overflow: hidden;
+}
+
+.testimonial-container .testimonial-user .user-image img {
+  border-radius: 50%;
+  border: 2px solid var(--white);
+}
+
+.testimonial-container .testimonial-user .user-name {
+  color: var(--black);
+}
+
+@media (max-width: 767.98px) {
+  #enrollment-page .main-content .enrollment-desc p {
+    font-size: 1rem;
+  }
+}
