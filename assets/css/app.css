@@ -1,28 +1,28 @@
 /* 1- Helpers */
-@import './helpers/_variables.css';
+@import './helpers/variables.css';
 
 /* 2- Baiscs */
-@import './basics/_global.css';
+@import './basics/global.css';
 
 /* 3- Layouts */
-@import './layouts/_header.css';
-@import './layouts/_footer.css';
+@import './layouts/header.css';
+@import './layouts/footer.css';
 
 /* 4- Modules */
-@import './modules/_module.css';
+@import './modules/module.css';
 
 /* 5- Pages */
-@import './pages/_home.css';
-@import './pages/_individual.css';
-@import './pages/_about-app.css';
-@import './pages/_schedule.css';
-@import './pages/_email-confirmation.css';
-@import './pages/_confirm.css';
-@import './pages/_resources.css';
-@import './pages/_self-care.css';
-@import './pages/_self-care-activities.css';
-@import './pages/_enrollment.css';
-@import './pages/_payment.css';
-@import './pages/_conditions.css';
-@import './pages/_about-us.css';
-@import './pages/_mobile-app.css';
+@import './pages/home.css';
+@import './pages/individual.css';
+@import './pages/about-app.css';
+@import './pages/schedule.css';
+@import './pages/email-confirmation.css';
+@import './pages/confirm.css';
+@import './pages/resources.css';
+@import './pages/self-care.css';
+@import './pages/self-care-activities.css';
+@import './pages/enrollment.css';
+@import './pages/payment.css';
+@import './pages/conditions.css';
+@import './pages/about-us.css';
+@import './pages/mobile-app.css';
