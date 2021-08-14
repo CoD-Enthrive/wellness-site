@@ -1,0 +1,102 @@
+#confirm-page .progress-bar .progress {
+  width: 100%;
+  -webkit-animation: progressCompleted 3s;
+          animation: progressCompleted 3s;
+}
+
+#confirm-page .progress-bar .enroll-confirmation {
+  -webkit-animation: enrolled 3s;
+          animation: enrolled 3s;
+}
+
+.content-container {
+  border: 1px solid var(--dark);
+  padding: 1em .75em;
+}
+
+.content-container .texts-wrapper {
+  width: 40%;
+  margin: auto;
+  color: var(--dark);
+}
+
+.content-container .texts-wrapper p {
+  text-align: center;
+}
+
+.content-container .link-text {
+  text-align: center;
+  color: var(--dark);
+  margin-bottom: 0;
+}
+
+.content-container .link-text a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.content-container .link-text a:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 991.98px) {
+  .content-container .texts-wrapper {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .content-container .texts-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .content-container .texts-wrapper {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes progressCompleted {
+  0% {
+    width: 80%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 100%;
+    background-color: var(--green);
+  }
+}
+
+@keyframes progressCompleted {
+  0% {
+    width: 80%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 100%;
+    background-color: var(--green);
+  }
+}
+
+@-webkit-keyframes enrolled {
+  0% {
+    width: 66%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 100%;
+    background-color: var(--green);
+  }
+}
+
+@keyframes enrolled {
+  0% {
+    width: 66%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 100%;
+    background-color: var(--green);
+  }
+}

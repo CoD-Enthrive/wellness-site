@@ -1,0 +1,79 @@
+.header {
+  background-color: transparent;
+  padding: 0;
+}
+
+.blue-header {
+  background-color: var(--blue);
+  -webkit-box-shadow: var(--header-shadow);
+          box-shadow: var(--header-shadow);
+}
+
+.header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-content .logo-container .logo {
+  margin-bottom: 0;
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.header .header-content .login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-content .login-container .counseling .direct-counseling {
+  display: block;
+  background-image: url("./../../images/menubg.png");
+  background-repeat: round;
+  background-position: left;
+  color: var(--white);
+  padding: 17px;
+  margin: 0;
+  margin-top: 7px;
+  padding-top: 6px;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--blue);
+  -webkit-box-shadow: var(--header-shadow);
+          box-shadow: var(--header-shadow);
+  z-index: 99;
+}
+
+@media (max-width: 767.98px) {
+  .header .header-content .logo-container .logo {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header .header-content .logo-container .logo {
+    font-size: 1.6rem;
+  }
+  .header .header-content .login-container .counseling .direct-counseling {
+    font-size: .9rem;
+  }
+}

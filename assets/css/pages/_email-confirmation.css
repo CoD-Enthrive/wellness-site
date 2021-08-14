@@ -1,0 +1,33 @@
+#email-confirm-page .progress-bar .progress {
+  width: 80%;
+  -webkit-animation: progressNinty 4s;
+          animation: progressNinty 4s;
+}
+
+@media (max-width: 767.98px) {
+  #email-confirm-page .main-content {
+    padding-bottom: 2em;
+  }
+}
+
+@-webkit-keyframes progressNinty {
+  0% {
+    width: 60%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 80%;
+    background-color: var(--green);
+  }
+}
+
+@keyframes progressNinty {
+  0% {
+    width: 60%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 80%;
+    background-color: var(--green);
+  }
+}

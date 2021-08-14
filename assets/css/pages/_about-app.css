@@ -1,0 +1,89 @@
+#aboutapp-page .progress-bar .progress {
+  width: 40%;
+  -webkit-animation: progressFifty 4s;
+          animation: progressFifty 4s;
+}
+
+#aboutapp-page .return-link-container .return-link:hover {
+  color: var(--black);
+}
+
+#aboutapp-page .main-content .counseling {
+  text-align: center;
+  margin-bottom: 1.4em;
+}
+
+.clinets-container {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.clinets-container .clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.4em;
+}
+
+.clinets-container .clients .about-client {
+  text-align: right;
+  margin-right: 1em;
+}
+
+.clinets-container .clients .about-client p {
+  margin: 0;
+}
+
+.clinets-container .clients .client-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clinets-container .clients .client-profile .img-container {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.clinets-container .clients .client-profile .img-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.clinets-container .clients .client-profile p {
+  margin: 0;
+}
+
+@-webkit-keyframes progressFifty {
+  0% {
+    width: 20%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 40%;
+    background-color: var(--green);
+  }
+}
+
+@keyframes progressFifty {
+  0% {
+    width: 20%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 40%;
+    background-color: var(--green);
+  }
+}

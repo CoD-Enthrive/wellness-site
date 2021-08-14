@@ -1,0 +1,416 @@
+
+/* Start Progress-bar */
+.progress-bar {
+  padding: 2px;
+  border-radius: 30px;
+  background: var(--progress-bar-bg);
+  -webkit-box-shadow: var(--progress-shadow);
+          box-shadow: var(--progress-shadow);
+}
+
+.progress-bar .progress {
+  height: 8px;
+  border-radius: 30px;
+  background-image: var(--progress-bg);
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
+  width: 20%;
+  background-color: var(--green);
+  -webkit-animation: progressAnimation 4s;
+          animation: progressAnimation 4s;
+}
+
+@-webkit-keyframes progressAnimation {
+  0% {
+    width: 0%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 20%;
+    background-color: var(--green);
+  }
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+    background-color: var(--green-100);
+  }
+  100% {
+    width: 20%;
+    background-color: var(--green);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .progress-bar .progress {
+    height: 6px;
+  }
+}
+/* End Progress-bar */
+
+/* Start sub Header */
+.return-link-container {
+  position: relative;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  min-height: 54px;
+}
+
+.return-link-container .return-link {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  font-size: 1.4rem;
+  padding: 2px 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.return-link-container .return-link:hover {
+  color: var(--blue);
+}
+
+.return-link-container .sub-title {
+  text-align: center;
+  margin: 0;
+}
+@media (max-width: 767.98px) {
+  .return-link-container {
+    padding: .5em 3.5em;
+  }
+}
+/* End sub Header */
+
+/* Start large Button */
+.linear-btn-container {
+  padding-top: 2em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.linear-btn-container .linear-btn {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: var(--linear-btn-bg);
+  padding: 4px 20px;
+  border-radius: 25px;
+  font-size: 1.25rem;
+  color: var(--white);
+}
+
+.linear-btn-container .blue-btn {
+  background: var(--blue);
+}
+
+.linear-btn-container .yellow-btn {
+  background: var(--yellow-200);
+  color: var(--black);
+}
+
+.linear-btn-container .condition-link {
+  display: inline;
+  width: auto;
+  padding: 6px 30px;
+}
+/* End large Button */
+
+/* Start Self-care activities and Conditions cards */
+.activity-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: var(--green);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.activity-cards .card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.activity-cards .card-texts {
+  padding: 1em;
+  text-align: center;
+}
+
+.activity-cards .card-links {
+  padding: 0 1em 1em 1em;
+  margin-top: auto;
+}
+
+.activity-cards .card-links .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--gray);
+  padding: .2em .75em;
+  font-size: 1.125rem;
+  color: var(--black);
+  border-radius: 20px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.activity-cards .card-links .links .arrow-icon {
+  font-size: 1rem;
+  margin-left: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.activity-cards .card-links .links:hover {
+  color: var(--black);
+}
+
+.activity-cards .card-links .links:hover .arrow-icon {
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+}
+
+.activity-cards .cards-audio {
+  padding: .5em 1em;
+  margin-top: auto;
+}
+
+.activity-cards .cards-audio audio {
+  width: 100%;
+  height: 34px;
+}
+/* End Self-care activities and Conditions cards */
+
+/* Start of forms */
+.form-field {
+  width: 100%;
+}
+
+.form-group {
+  width: 80%;
+  margin: auto;
+}
+
+.form-group .user-name-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-group .user-name-wrapper .input-group {
+  width: 50%;
+  margin-bottom: 1em;
+  font-size: 1.125rem;
+  color: var(--dark);
+}
+
+.form-group .user-name-wrapper .input-group .input-group-text {
+  font-size: 1.4rem;
+  color: var(--blue);
+}
+
+.form-group .user-name-wrapper .input-group .credit-card {
+  font-size: 1.25rem;
+}
+
+.form-group .user-name-wrapper .input-group input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.form-group .user-name-wrapper .input-group #first-name,
+.form-group .user-name-wrapper .input-group #card-number {
+  width: calc(100% - 50px);
+  border-radius: 0 4px 4px 0;
+}
+
+.form-text {
+  font-size: 1.125rem;
+  color: var(--dark);
+}
+
+.inputs-contianer {
+  border: 1px solid var(--dark);
+  padding: 1em 2em 2.5em 2em;
+}
+
+.inputs-contianer:first-child {
+  border-bottom: none;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 1.125rem;
+}
+
+.input-group .input-group-text {
+  font-size: 1.4rem;
+  color: var(--blue);
+}
+
+.input-group .input-group-text .phone-icon {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.input-group input {
+  width: calc(100% - 48px);
+  border: none;
+  outline: none;
+  border: 1px solid var(--input-border);
+  border-radius: 0 4px 4px 0;
+  padding: 6px 12px;
+}
+
+.input-group .expire-date {
+  width: 100%;
+}
+
+.textarea-container {
+  width: 100%;
+}
+
+.textarea-container textarea {
+  outline: none;
+  width: 100%;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 1.125rem;
+  margin-bottom: .73em;
+}
+
+@media (max-width: 767.98px) {
+  .form-group {
+    width: 100%;
+  }
+  .form-text {
+    font-size: 1rem;
+  }
+  .inputs-contianer {
+    padding: 1em;
+    padding-bottom: 2.3em;
+  }
+}
+
+@media (max-width: 475.98px) {
+  .form-group .user-name-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-group .user-name-wrapper .input-group {
+    width: 100%;
+  }
+  .form-group .user-name-wrapper .input-group #first-name,
+  .form-group .user-name-wrapper .input-group #card-number {
+    width: calc(100% - 48px);
+  }
+}
+/* End of forms */
+
+/* Start of Counsolers cards */
+.underline-title {
+  border-bottom: 1px solid var(--gray-100);
+  margin-bottom: 1em;
+}
+
+.underline-title h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.underline-title h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7.5px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue);
+}
+
+.our-counselors {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.counselors {
+  margin-top: 1.6em;
+  padding: 0 1em;
+}
+
+.counselors .counselors-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.counselors .counselors-profile .counselors-image {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.counselors .counselors-profile .counselors-image img {
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.counselors .counselors-profile .counselors-image img:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.counselors .counselors-profile .counselors-name {
+  color: var(--blue);
+  font-weight: 600;
+  margin: 0;
+}
+
+.counselors .counselors-about {
+  text-align: center;
+  color: var(--dark);
+  margin-top: .5em;
+}
+
+.counselors .counselors-about h6 {
+  color: var(--black);
+  margin-bottom: 1em;
+}
+
+@media (max-width: 575.98px) {
+  .counselors .counselors-profile .counselors-name {
+    font-size: 1.1rem;
+  }
+}
+/* Start of Counsolers cards */

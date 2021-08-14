@@ -1,0 +1,66 @@
+#resources-page {
+  color: var(--dark);
+}
+
+.resource-container h2 {
+  font-weight: 500;
+  color: var(--black);
+}
+
+.resource-container .blue-text {
+  color: var(--black);
+  font-size: 1.25rem;
+}
+
+.resource-container .resource-content {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.resource-container .resource-content h4 {
+  color: var(--black);
+  font-size: 1.8rem;
+}
+
+.resource-container .resource-content p {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.resource-container .resource-content p .underline-link {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.resource-container .resource-content p .underline-link:hover {
+  color: var(--blue);
+}
+
+.resource-container .resource-content .resource-links-list {
+  padding: 0 1em;
+  margin: 1em;
+}
+
+.resource-container .resource-content .resource-links-list li {
+  list-style-type: disc;
+}
+
+.resource-container .resource-content .resource-links-list li a {
+  font-size: 1.25rem;
+  word-break: break-all;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.resource-container .resource-content .resource-links-list li a:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 575.98px) {
+  .resource-container .resource-content p {
+    font-size: 1rem;
+  }
+  .resource-container .resource-content .resource-links-list li a {
+    font-size: 1rem;
+  }
+}

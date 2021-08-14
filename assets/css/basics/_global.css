@@ -1,175 +1,179 @@
-// Roboto Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
-// Roboto Slab Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap');
-
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap");
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body{
+body {
   position: relative;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 1rem;
-  color: $white;
+  color: var(--white);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.5;
 }
 
-.container{
+.container {
   max-width: 1140px;
 }
-hr{
-  background-color: $black;
+
+hr {
+  background-color: var(--black);
   opacity: 1;
 }
-h1{
+
+h1 {
   font-size: 3.5rem;
   font-weight: 600;
 }
 
-h2{
+h2 {
   font-size: 3rem;
   font-weight: 600;
 }
 
-h3{
+h3 {
   font-size: 2.4rem;
   font-weight: 600;
 }
 
-h4{
+h4 {
   font-size: 2rem;
   font-weight: 500;
 }
 
-h5{
+h5 {
   font-size: 1.2rem;
   font-weight: 400;
 }
 
-h6{
+h6 {
   font-size: .9rem;
   font-weight: 600;
 }
 
-ul{
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.page-wrapper{
-  @include page-height;
+.page-wrapper {
+  width: 100%;
+  min-height: 100vh;
 }
 
-.blue-page{
-  background: linear-gradient(#9adbfd, #5cb4f7);
+.blue-page {
+  background: var(--blue-background);
 }
 
-.dark-white-page{
-  background: $white-400;
+.dark-white-page {
+  background: var(--white-400);
 }
 
-.yellow-page{
-  background: $yellow-100;
+.yellow-page {
+  background: var(--yellow-100);
 }
 
-.main-content{
-  @include main-content-padding;
+.main-content {
+  padding-top: 2em;
+  padding-bottom: 4em;
 }
 
-.underline-link{
+.underline-link {
   text-decoration: underline;
 }
 
-.white-text{
-  color: $white;
+.white-text {
+  color: var(--white);
 }
 
-.black-text{
-  color: $black;
+.black-text {
+  color: var(--black);
 }
 
-.dark-text{
-  color: $dark;
+.dark-text {
+  color: var(--dark);
 }
-.title-desc{
+
+.title-desc {
   font-size: 1.25rem;
 }
 
-.desc-text{
-  font-size: 1.125rem
+.desc-text {
+  font-size: 1.125rem;
 }
 
 @media (max-width: 767.98px) {
-  h1{
+  h1 {
     font-size: 2.8rem;
   }
-  h2{
+  h2 {
     font-size: 2.6rem;
   }
-  h3{
+  h3 {
     font-size: 2.2rem;
   }
-  h4{
+  h4 {
     font-size: 1.8rem;
   }
-  h5{
+  h5 {
     font-size: 1.1rem;
   }
-  .title-desc{
+  .title-desc {
     font-size: 1.125rem;
   }
-  .desc-text{
+  .desc-text {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 575.98px) {
-  h1{
+  h1 {
     font-size: 2.4rem;
   }
-  h2{
+  h2 {
     font-size: 2rem;
   }
-  h3{
+  h3 {
     font-size: 1.8rem;
   }
-  h4{
+  h4 {
     font-size: 1.6rem;
   }
-  h5{
+  h5 {
     font-size: 1rem;
   }
-  .title-desc{
+  .title-desc {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 341.98px) {
-  h1{
+  h1 {
     font-size: 2.2rem;
   }
-  h2{
+  h2 {
     font-size: 1.8rem;
   }
-  h3{
+  h3 {
     font-size: 1.6rem;
   }
-  h4{
+  h4 {
     font-size: 1.4rem;
   }
-  h5{
+  h5 {
     font-size: .9rem;
   }
 }
